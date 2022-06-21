@@ -11,5 +11,4 @@ jobs:
     - name: Build the C# code
       run: dotnet build
     - name: Install npm
-      run: cd DotnetTemplate.Web
-      run: npm install
+      run: cd DotnetTemplate.Web | npm install
