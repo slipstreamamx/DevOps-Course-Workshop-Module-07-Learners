@@ -7,3 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - name: Build the C# code
+      run: dotnet build
+    - name: Install npm
+      run: cd DotnetTemplate.Web
+      run: npm install
